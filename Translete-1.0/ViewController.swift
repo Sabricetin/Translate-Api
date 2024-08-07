@@ -19,28 +19,30 @@ class ViewController: UIViewController {
           
           setupUI()
       }
-      
+     
       func setupUI() {
           // TextField setup
-          textField.borderStyle = .roundedRect
-          textField.placeholder = "Enter text to translate"
-          textField.frame = CGRect(x: 20, y: 100, width: self.view.frame.width - 40, height: 40)
+          //textField.borderStyle = .roundedRect
+          //textField.placeholder = "Enter text to translate"
+          //textField.frame = CGRect(x: 20, y: 100, width: self.view.frame.width - 40, height: 40)
           view.addSubview(textField)
           
           // Button setup
-          translateButton.setTitle("Translate", for: .normal)
-          translateButton.backgroundColor = .systemBlue
-          translateButton.layer.cornerRadius = 5
-          translateButton.frame = CGRect(x: (self.view.frame.width - 100) / 2, y: 160, width: 100, height: 50)
+          //translateButton.setTitle("Translate", for: .normal)
+          //translateButton.backgroundColor = .systemBlue
+          //translateButton.layer.cornerRadius = 5
+          //translateButton.frame = CGRect(x: (self.view.frame.width - 100) / 2, y: 160, width: 100, height: 50)
           translateButton.addTarget(self, action: #selector(translateButtonTapped), for: .touchUpInside)
           view.addSubview(translateButton)
           
           // Label setup
-          resultLabel.textAlignment = .center
-          resultLabel.numberOfLines = 0
-          resultLabel.frame = CGRect(x: 20, y: 230, width: self.view.frame.width - 40, height: 100)
+          //resultLabel.textAlignment = .center
+          //resultLabel.numberOfLines = 0
+          //resultLabel.frame = CGRect(x: 20, y: 230, width: self.view.frame.width - 40, height: 100)
           view.addSubview(resultLabel)
+          resultLabel.numberOfLines = 0
       }
+       
       
       @objc func translateButtonTapped() {
           guard let textToTranslate = textField.text, !textToTranslate.isEmpty else { return }
