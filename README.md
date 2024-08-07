@@ -30,3 +30,4 @@ Bu kod, kullanıcıların metinlerini girmelerini, çeviri yapmalarını ve sonu
 - `translate`: Çeviri işlemi için gerekli HTTP başlıklarını ve parametrelerini ayarlar. API isteği gönderir ve gelen yanıtı JSON formatında ayrıştırır. Başarılı bir çeviri durumunda çeviri sonucunu `resultLabel` üzerinde görüntüler.
 
 ---
+![Uploading Simulator Screen Recording - iPhone 15 Pro - 2024-08-07 at 19.03.43.gif…]()
